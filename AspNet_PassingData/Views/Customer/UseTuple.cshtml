@@ -1,0 +1,19 @@
+﻿@using AspNet_PassingData.Models
+@model (List<Customer> customers, Product product, string date)
+
+
+<p>
+    Tuple View
+
+</p>
+
+<ul>
+    @foreach (Customer item in Model.customers)
+    {
+        <li>@item.CustomerName</li>
+    }
+</ul>
+
+<p> Ürün @Model.product.ProductName</p>
+
+<p>tarih : @Model.date</p>
